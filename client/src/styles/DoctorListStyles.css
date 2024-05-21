@@ -1,0 +1,83 @@
+/* DoctorListStyles.css */
+
+.doctor-card {
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.2s; /* Smooth hover effect */
+    cursor: pointer;
+  }
+  
+  .doctor-card:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+  }
+  
+  .doctor-card-header {
+    background-color: #007bff; /* Blue background for header */
+    text-align: center;
+    color: #ffffff; /* White text */
+    padding: 10px;
+    max-width:100%;
+    border-radius:10px;
+    /* border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; */
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .doctor-card-body {
+    padding: 10px 20px;
+    color: #333333; /* Dark text color */
+    font-size: 16px;
+  }
+  
+  .doctor-card-body p {
+    margin: 10px 0; /* Space between paragraphs */
+  }
+  
+  .doctor-card-body p b {
+    color: #007bff; /* Blue color for bold text */
+  }
+  
+
+/* .doctor-card {
+    background-color:  #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .doctor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .doctor-card-header {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .doctor-card-body {
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .doctor-card-body p {
+    margin: 10px 0;
+  }
+  
+  .doctor-card-body b {
+    color: #555;
+  }
+  
+  .fa-indian-rupee-sign {
+    margin-right: 5px;
+  }
+   */

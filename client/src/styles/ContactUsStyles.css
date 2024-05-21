@@ -1,0 +1,32 @@
+.contact-section {
+    padding: 50px;
+    background-color: #f0f8ff;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form .ant-form-item {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form .ant-input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #007bff;
+  }
+  
+  .contact-form .ant-input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  }
+  

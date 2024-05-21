@@ -1,3 +1,5 @@
+
+
 import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import { useParams } from "react-router-dom";
@@ -6,6 +8,8 @@ import { DatePicker, message, TimePicker } from "antd";
 import moment from "moment";
 import { useDispatch, useSelector } from "react-redux";
 import { showLoading, hideLoading } from "../redux/features/alertSlice";
+import '../styles/Booking.css';
+
 
 const BookingPage = () => {
   const { user } = useSelector((state) => state.user);

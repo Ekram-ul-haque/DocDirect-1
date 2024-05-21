@@ -49,9 +49,10 @@ const Layout = ({ children }) => {
     <>
       <div className="main">
         <div className="layout">
+          
           <div className="sidebar">
             <div className="logo">
-              <h6 className="text-light">DOC APP</h6>
+              <h6 className="text-light">ClinixHub</h6>
               <hr />
             </div>
             <div className="menu">
@@ -72,6 +73,7 @@ const Layout = ({ children }) => {
               </div>
             </div>
           </div>
+
           <div className="content">
             <div className="header">
               <div className="header-content" style={{ cursor: "pointer" }}>
