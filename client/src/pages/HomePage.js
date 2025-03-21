@@ -4,12 +4,11 @@ import '../styles/HomepageStyles.css'
 import Layout from "./../components/Layout";
 import { Row,Col } from "antd";
 import DoctorList from "../components/DoctorList";
-import About from "../components/About";
-import ContactUs from "../components/ContactUs";
-import Footer from "../components/Footer";
+
 const HomePage = () => {
   const [doctors, setDoctors] = useState([]);
   // login user data
+  // sending token from homepage 
   const getUserData = async () => {
     try {
       const res = await axios.get(
@@ -34,8 +33,8 @@ const HomePage = () => {
   }, []);
   return (
     <Layout>
-      <p className="text-xl md:text-3xl p-10 text-center text-blue-500">Welcome to ClinixHub - Revolutionizing Hospital Management</p>
-      <p className="text-md md:text-xl pl-20 pr-20 text-center">Experience the future of healthcare management with our state-of-the-art platform. ClinixHub is designed to optimize every aspect of hospital administration, ensuring seamless operations and improved patient care.</p>
+      <p className="text-xl md:text-3xl p-10 text-center text-blue-500">Welcome to DocDirect - Revolutionizing Hospital Management</p>
+      <p className="text-md md:text-xl pl-20 pr-20 text-center">Experience the future of healthcare management with our state-of-the-art platform. DocDirect is designed to optimize every aspect of hospital administration, ensuring seamless operations and improved patient care.</p>
       <section id="doctors">
         <h2 className="section-title">Our Doctors</h2>
         <Row gutter={[16, 16]}>
@@ -46,9 +45,6 @@ const HomePage = () => {
           ))}
         </Row>
       </section>
-      <About />
-      <ContactUs />
-      <Footer />
     </Layout>
   );
 };

@@ -9,11 +9,11 @@ export const userMenu = [
     path: "/appointments",
     icon: "fa-solid fa-list",
   },
-  {
-    name: "Apply Doctor",
-    path: "/apply-doctor",
-    icon: "fa-solid fa-user-doctor",
-  },
+  // {
+  //   name: "Apply Doctor",
+  //   path: "/apply-doctor",
+  //   icon: "fa-solid fa-user-doctor",
+  // },
   {
     name: "Profile",
     path: "/profile",

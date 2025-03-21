@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
           
           <div className="sidebar">
             <div className="logo">
-              <h6 className="text-light">ClinixHub</h6>
+              <h6 className="text-light">DocDirect</h6>
               <hr />
             </div>
             <div className="menu">
@@ -60,14 +60,14 @@ const Layout = ({ children }) => {
                 const isActive = location.pathname === menu.path;
                 return (
                   <>
-                    <div className={`menu-item ${isActive && "active"}`}>
+                    <div className={`menu-item ${isActive && "active"} ${!isActive && "not-active"}`}>
                       <i className={menu.icon}></i>
                       <Link to={menu.path}>{menu.name}</Link>
                     </div>
                   </>
                 );
               })}
-              <div className={`menu-item `} onClick={handleLogout}>
+              <div className={`menu-item not-active`} onClick={handleLogout}>
                 <i className="fa-solid fa-right-from-bracket"></i>
                 <Link to="/login">Logout</Link>
               </div>
@@ -76,18 +76,20 @@ const Layout = ({ children }) => {
 
           <div className="content">
             <div className="header">
+              {user != null ? 
               <div className="header-content" style={{ cursor: "pointer" }}>
-                <Badge
-                  count={user && user.notifcation.length}
-                  onClick={() => {
-                    navigate("/notification");
-                  }}
-                >
-                  <i class="fa-solid fa-bell"></i>
-                </Badge>
+              <Badge
+                count={user && user.notifcation.length}
+                onClick={() => {
+                  navigate("/notification");
+                }}
+              >
+              <i class="fa-solid fa-bell"></i>
+              </Badge>
 
-                <Link to="/profile">{user?.name}</Link>
+              <Link to="/profile">{user?.name}</Link>
               </div>
+              : null}
             </div>
             <div className="body">{children}</div>
           </div>

@@ -35,20 +35,23 @@ const Register = () => {
           onFinish={onfinishHandler}
           className="register-form"
         >
-          <h3 className="text-center">Register Form</h3>
-          <Form.Item label="Name" name="name">
-            <Input type="text" required />
+          <h3 className="text-center" style={{ fontSize: '25px' }}>Register Form</h3>
+          <Form.Item label="Name" name="name" style={{ fontSize: '25px' }}>
+            <Input type="text" required style={{ fontSize: '20px' }} />
           </Form.Item>
-          <Form.Item label="Email" name="email">
-            <Input type="email" required />
+          <Form.Item label="Email" name="email" style={{ fontSize: '25px' }}>
+            <Input type="email" required style={{ fontSize: '20px' }} />
           </Form.Item>
-          <Form.Item label="Password" name="password">
-            <Input type="password" required />
+          <Form.Item label="Password" name="password" style={{ fontSize: '25px' }}>
+            <Input type="password" required style={{ fontSize: '20px' }} />
           </Form.Item>
+          {/* <Link to="/apply-doctor" className="m-2">
+            Register as doctor
+          </Link> */}
           <Link to="/login" className="m-2">
-            Already user login here
+            Already a user? Login here
           </Link>
-          <button className="btn btn-primary" type="submit">
+          <button className="btn btn-primary" type="submit" style={{ fontSize: '25px' }}>
             Register
           </button>
         </Form>

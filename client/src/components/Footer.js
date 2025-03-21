@@ -4,7 +4,7 @@ import "../styles/FooterStyles.css";
 const Footer = () => {
   return (
     <footer className=" footer">
-      <p>&copy; 2024 Hospital Appointment Booking System. All rights reserved.</p>
+      <p>&copy; 2025 Hospital Appointment Booking System. All rights reserved.</p>
     </footer>
   );
 };

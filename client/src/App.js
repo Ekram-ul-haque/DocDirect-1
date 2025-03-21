@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import LandingPage from "./pages/LandingPage";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import { useSelector } from "react-redux";
@@ -16,6 +17,7 @@ import Appointments from "./pages/Appointments";
 import DoctorAppointments from "./pages/doctor/DoctorAppointments";
 function App() {
   const { loading } = useSelector((state) => state.alerts);
+  // const token = localStorage.getItem("token");
   return (
     <>
       <BrowserRouter>
@@ -26,9 +28,9 @@ function App() {
             <Route
               path="/apply-doctor"
               element={
-                <ProtectedRoute>
+                <PublicRoute>
                   <ApplyDoctor />
-                </ProtectedRoute>
+                </PublicRoute>
               }
             />
             <Route
@@ -106,9 +108,16 @@ function App() {
             <Route
               path="/"
               element={
+                // token ? (
                 <ProtectedRoute>
-                  <HomePage />
+                 <HomePage />
                 </ProtectedRoute>
+                // ) : 
+                // (
+                // <PublicRoute>
+                //  <LandingPage />
+                // </PublicRoute>
+                // )
               }
             />
           </Routes>

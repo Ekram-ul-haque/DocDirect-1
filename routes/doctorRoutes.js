@@ -3,11 +3,15 @@ const {
   getDoctorInfoController,
   updateProfileController,
   getDoctorByIdController,
+  applyDoctorController,
   doctorAppointmentsController,
   updateStatusController,
 } = require("../controllers/doctorCtrl");
 const authMiddleware = require("../middlewares/authMiddleware");
 const router = express.Router();
+
+//Apply Doctor || POST
+router.post("/apply-doctor", applyDoctorController);
 
 //POST SINGLE DOC INFO
 router.post("/getDoctorInfo", authMiddleware, getDoctorInfoController);

@@ -21,6 +21,10 @@ const doctorSchema = new mongoose.Schema(
       type: String,
       required: [true, "email is required"],
     },
+    password: {
+      type: String,
+      required: [true, "password is required"],
+    },
     website: {
       type: String,
     },
@@ -47,6 +51,18 @@ const doctorSchema = new mongoose.Schema(
     timings: {
       type: Object,
       required: [true, "work timing is required"],
+    },
+    isDoctor: {
+      type: Boolean,
+      default: true,
+    },
+    notifcation: {
+      type: Array,
+      default: [],
+    },
+    seennotification: {
+      type: Array,
+      default: [],
     },
   },
   { timestamps: true }

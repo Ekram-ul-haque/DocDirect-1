@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* navigation bar below */
+
+.navbar {
+    display: flex;
+    width: 100%;
+    /* background-color: #007bff; */
+    background: linear-gradient(to right, #007bff, rgb(130, 206, 238));
+    /* position: sticky; */
+    top: 0; /* important to make position sticky*/
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 10px 35px;
+    margin: auto;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.nav-list li a:hover {
+    color: lightyellow;
+}
+
+/* .custom-link{
+    color: white;
+    border-radius: 20px;
+} */
+
+.logo img{
+    width: 21%;
+    margin-top: 10px;
+    margin-left: 15px;
+    border: solid white 2px;
+    border-radius: 50%;
+    
+}
+
+.burger {
+    display: none;
+    position: absolute; /* very important point */
+    cursor: pointer;
+    top: 15px;
+    right: 5%;
+}
+
+.line {
+    background-color: white;
+    width: 20px;
+    height: 3px;
+    margin: 5px 2px;
+    border-radius: 1px;
+}
+
+/* Ensure no margin or padding */
+/* .carousel, .carousel-item {
+    margin: 0;
+    padding: 0;
+} */
+  
+/* Make the carousel cover 80% of the viewport height */
+/* .carousel {
+    height: 80%;
+} */
+
+/* Make sure images inside the carousel fill the container */
+/* .carousel-item img {
+    object-fit: contain;  
+    width: 90%;
+    height: 80%;
+    object-position: center; 
+} */
+
+/* Remove carousel caption padding/margin */
+/* .carousel-caption {
+    bottom: 20px; /* Adjust to keep the caption closer to the bottom */
+/* } */ 
+  
