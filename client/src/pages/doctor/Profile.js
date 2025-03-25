@@ -75,7 +75,7 @@ const Profile = () => {
   }, []);
   return (
     <Layout>
-      <h1>Manage Profile</h1>
+      <h1 className="display-6" style={{color: "#3A98B9"}}>Manage Profile</h1>
       {doctor && (
         <Form
           layout="vertical"
@@ -186,7 +186,7 @@ const Profile = () => {
             </Col>
             <Col xs={24} md={24} lg={8}></Col>
             <Col xs={24} md={24} lg={8}>
-              <button className="btn btn-primary form-btn" type="submit">
+              <button className="btn btn-primary form-btn" type="submit" style={{background: "#3A98B9"}}>
                 Update
               </button>
             </Col>

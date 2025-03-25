@@ -60,21 +60,21 @@ const NotificationPage = () => {
     } catch (error) {
       dispatch(hideLoading());
       console.log(error);
-      message.error("Somthing Went Wrong In Ntifications");
+      message.error("Somthing went wrong in notifications");
     }
   };
   return (
     <Layout>
-      <h4 className="p-3 text-center">Notification Page</h4>
-      <Tabs>
-        <Tabs.TabPane tab="unRead" key={0}>
-          <div className="d-flex justify-content-end">
-            <h4 className="p-2" onClick={handleMarkAllRead}>
+      <h3 className="p-3 text-center display-6">Notifications</h3>
+      <Tabs className="p-3">
+        <Tabs.TabPane tab="New" className="" key={0}>
+          <div className="d-flex justify-content-end" style={{ cursor: "pointer" }}>
+            <h4 className="p-2 m-2 border border-2 border-primary" onClick={handleMarkAllRead}>
               Mark All Read
             </h4>
           </div>
           {user?.notifcation.map((notificationMgs) => (
-            <div className="card" style={{ cursor: "pointer" }}>
+            <div className="card p-2" style={{ cursor: "pointer", fontSize: "15px" }}>
               <div
                 className="card-text"
                 onClick={() => navigate(notificationMgs.onClickPath)}
@@ -84,14 +84,14 @@ const NotificationPage = () => {
             </div>
           ))}
         </Tabs.TabPane>
-        <Tabs.TabPane tab="Read" key={1}>
+        <Tabs.TabPane tab="Old" key={1}>
           <div className="d-flex justify-content-end">
             <h4
-              className="p-2 text-primary"
+              className="p-2 m-2 border border-2 border-primary"
               style={{ cursor: "pointer" }}
               onClick={handleDeleteAllRead}
             >
-              Delete All Read
+              Delete All Old
             </h4>
           </div>
           {user?.seennotification.map((notificationMgs) => (

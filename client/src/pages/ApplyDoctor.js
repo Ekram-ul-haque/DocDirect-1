@@ -5,6 +5,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { showLoading, hideLoading } from "../redux/features/alertSlice";
 import axios from "axios";
 import moment from "moment";
+
 const ApplyDoctor = () => {
   const { user } = useSelector((state) => state.user);
 
@@ -44,7 +45,7 @@ const ApplyDoctor = () => {
   return (
     <div className="doc-form-container ">
 
-      <h3 className="text-center" style={{ fontSize: '25px' }}>Register as Doctor</h3>
+      <h3 className="text-center" style={{ fontSize: '25px', color: "#1ABC9C" }}>Register as Doctor</h3>
       <Form layout="vertical" onFinish={handleFinish} className="m-3" style={{ maxWidth: '1000px', width: '100%' }}>
   <h4 className="" style={{ fontSize: '18px' }}>Personal Details:</h4>
 
@@ -153,7 +154,7 @@ const ApplyDoctor = () => {
     <Col xs={24} sm={12} md={12} lg={12}>
       <Form.Item
         label="Fees Per Consultation"
-        name="feesPerConsultation"
+        name="feesPerCunsaltation"
         required
         rules={[{ required: true }]}
       >
@@ -169,7 +170,7 @@ const ApplyDoctor = () => {
   </Row>
 
   <Form.Item>
-    <button className="btn btn-primary form-btn" type="submit">
+    <button className="btn btn-primary form-btn" type="submit" style={{ fontSize: '25px', background: "#1ABC9C", justifyContent: 'center', alignItems: 'center' }}>
       Submit
     </button>
   </Form.Item>
