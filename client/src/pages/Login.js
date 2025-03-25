@@ -36,7 +36,7 @@ const Login = () => {
         onFinish={onfinishHandler}
         className="register-form"
       >
-        <h3 className="text-center" style={{ fontSize: '25px' }}>Login Form</h3>
+        <h3 className="text-center" style={{ fontSize: '25px', color: '#1ABC9C'}}>Login Form</h3>
 
         <Form.Item label="Email" name="email" style={{ fontSize: '25px' }}>
           <Input type="email" required style={{ fontSize: '20px' }} />
@@ -50,7 +50,7 @@ const Login = () => {
         <Link to="/apply-doctor" className="m-2">
           Register as a doctor
         </Link>
-        <button className="btn btn-primary" type="submit" style={{ fontSize: '25px' }}>
+        <button className="btn btn-primary" type="submit" style={{ fontSize: '25px', background: "#1ABC9C"}}>
           Login
         </button>
       </Form>

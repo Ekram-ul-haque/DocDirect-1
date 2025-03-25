@@ -35,7 +35,7 @@ const Register = () => {
           onFinish={onfinishHandler}
           className="register-form"
         >
-          <h3 className="text-center" style={{ fontSize: '25px' }}>Register Form</h3>
+          <h3 className="text-center" style={{ fontSize: '25px', color:'#1ABC9C'}}>Register Form</h3>
           <Form.Item label="Name" name="name" style={{ fontSize: '25px' }}>
             <Input type="text" required style={{ fontSize: '20px' }} />
           </Form.Item>
@@ -51,7 +51,7 @@ const Register = () => {
           <Link to="/login" className="m-2">
             Already a user? Login here
           </Link>
-          <button className="btn btn-primary" type="submit" style={{ fontSize: '25px' }}>
+          <button className="btn btn-primary" type="submit" style={{ fontSize: '25px', background: "#1ABC9C" }}>
             Register
           </button>
         </Form>

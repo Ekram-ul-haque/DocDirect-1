@@ -1,0 +1,40 @@
+.book-card {
+    /* border: 2px solid #e8e8e8;
+    border-radius: 5px; */
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px;
+}
+
+.book-card h4{
+    font-size: 18px;
+    margin: 5px 5px;
+}
+
+.left-div, .right-div {
+    padding: 25px;           /* Add padding inside the divs */
+    margin: 20px;            /* Add margin between the divs */
+    background-color: #f4f4f4;
+    border-radius: 8px;      /* Optional: Adds rounded corners */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.left-div {
+    flex: 1;                 /* Allows the left div to take available space */
+    /* background-color: #d0e1f9; Light blue background for left div */
+}
+
+.left-div img {
+    margin: 10px;
+    width: 220px;
+    height: 250px;
+}
+
+.right-div {
+    width: 600px;            /* Set a fixed width for the right div */
+    /* background-color: #f9d0d0; Light red background for right div */
+}
+  

@@ -95,7 +95,7 @@ const DoctorAppointments = () => {
   ];
   return (
     <Layout>
-      <h1>Appointments List</h1>
+      <h1 className="display-6 p-3" style={{color: "#3A98B9"}}>Appointments List</h1>
       <Table columns={columns} dataSource={appointments} />
     </Layout>
   );

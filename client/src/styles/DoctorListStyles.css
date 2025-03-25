@@ -15,7 +15,7 @@
   }
   
   .doctor-card-header {
-    background-color: #007bff; /* Blue background for header */
+    background-color: #333333; /* Blue background for header */
     text-align: center;
     color: #ffffff; /* White text */
     padding: 10px;
@@ -28,7 +28,7 @@
   }
   
   .doctor-card-body {
-    padding: 10px 20px;
+    padding: 10px 10px;
     color: #333333; /* Dark text color */
     font-size: 16px;
   }
@@ -38,7 +38,7 @@
   }
   
   .doctor-card-body p b {
-    color: #007bff; /* Blue color for bold text */
+    color: #3A98B9; /* Blue color for bold text */
   }
   
 
