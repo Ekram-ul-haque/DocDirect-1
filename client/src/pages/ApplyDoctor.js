@@ -169,15 +169,16 @@ const ApplyDoctor = () => {
     </Col>
   </Row>
 
-  <Form.Item>
-    <button className="btn btn-primary form-btn" type="submit" style={{ fontSize: '25px', background: "#1ABC9C", justifyContent: 'center', alignItems: 'center' }}>
-      Submit
-    </button>
-  </Form.Item>
-
   <Link to="/login" className="m-2">
     Already a doctor? Login here
   </Link>
+
+    <Form.Item>
+      <button className="btn btn-primary form-btn" type="submit" style={{ fontSize: '25px', background: "#1ABC9C"}}>
+        Submit
+      </button>
+    </Form.Item>
+
 </Form>
 
 

@@ -35,15 +35,47 @@ const Register = () => {
           onFinish={onfinishHandler}
           className="register-form"
         >
-          <h3 className="text-center" style={{ fontSize: '25px', color:'#1ABC9C'}}>Register Form</h3>
-          <Form.Item label="Name" name="name" style={{ fontSize: '25px' }}>
+          <h3 className="text-center" style={{ fontSize: '25px', color:'#1ABC9C'}}>User Register Form</h3>
+          <Form.Item label="Name" name="name" style={{ fontSize: '25px' }} rules={[
+              { 
+                required: true, 
+                message: 'Please enter your name' 
+              }]}>
             <Input type="text" required style={{ fontSize: '20px' }} />
           </Form.Item>
-          <Form.Item label="Email" name="email" style={{ fontSize: '25px' }}>
+          <Form.Item label="Email" name="email" style={{ fontSize: '25px' }} rules={[
+              { 
+                required: true, 
+                message: 'Please enter your email' 
+              }]}>
             <Input type="email" required style={{ fontSize: '20px' }} />
           </Form.Item>
-          <Form.Item label="Password" name="password" style={{ fontSize: '25px' }}>
-            <Input type="password" required style={{ fontSize: '20px' }} />
+          <Form.Item label="Password" name="password" style={{ fontSize: '25px' }} rules={[
+              { 
+                required: true, 
+                message: 'Please enter your password' 
+              }]}>
+            <Input.Password style={{ fontSize: '20px', padding: '8px', borderRadius: '4px', border: '1px solid #17A087' }} />
+            {/* <Input type="password" required style={{ fontSize: '20px' }} visibilityToggle={true}/> */}
+          </Form.Item>
+          <Form.Item label="Confirm Password" name="confirmPassword" style={{ fontSize: '25px' }} 
+            dependencies={['password']} hasFeedback
+            rules={[
+              { 
+                required: true, 
+                message: 'Please confirm your password!' 
+              },
+              ({ getFieldValue }) => ({
+                validator(_, value) {
+                  if (!value || getFieldValue('password') === value) {
+                    return Promise.resolve();
+                  }
+                  return Promise.reject(new Error('The two passwords do not match!'));
+                },
+              }),
+            ]}
+          >
+            <Input type="password" style={{ fontSize: '20px', padding: '8px', borderRadius: '4px', border: '1px solid #17A087' }} />
           </Form.Item>
           {/* <Link to="/apply-doctor" className="m-2">
             Register as doctor
