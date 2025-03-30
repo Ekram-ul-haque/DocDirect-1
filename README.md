@@ -2,7 +2,7 @@
 ## Introduction
 A Doctor Appointment Booking System: Effortless Scheduling for Better Healthcare. 
 
-This application is a platform designed to streamline the process of booking doctor appointments. It provides a seamless user experience for patients, doctors, and administrators to manage and schedule appointments efficiently.
+This application is a platform designed to streamline the process of booking doctor appointments. It provides a seamless experience for patients, doctors, and administrators to manage and schedule appointments efficiently.
 
 ### Benefits: 
 Reduces scheduling conflicts, Reduces wait time, Verified doctors, Notifications, appointment tracking, doctor dashboard.
