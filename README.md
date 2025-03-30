@@ -1,40 +1,70 @@
-# DocDirect
+# DocDirect: An appointment booking system
+## Introduction
 A Doctor Appointment Booking System: Effortless Scheduling for Better Healthcare. 
 
-This application is a comprehensive platform designed to streamline the process of booking doctor appointments. It provides a seamless user experience for patients, doctors, and administrators to manage and schedule appointments efficiently. The app includes the following features:
+This application is a platform designed to streamline the process of booking doctor appointments. It provides a seamless user experience for patients, doctors, and administrators to manage and schedule appointments efficiently.
 
-User (Patient) Features: Login/Registration, Book and View Appointments, 
+### Benefits: 
+Reduces scheduling conflicts, Reduces wait time, Verified doctors, Notifications, appointment tracking, doctor dashboard.
 
-Doctor Features: Login/Registration, Appointment Management, Profile Management, Availability Management
+## Features:
+* User, Doctor and Admin interfaces.
+* User (Patient) Features: Login/Registration, book and view appointments from a vast range of diversified doctors.
+* Doctor Features: Login/Registration, appointment management, profile management, availability management.
+* Authentication & Authorization: Secure login and registration with JWT-based authentication.
+* RESTful API Integration: Efficient communication between client and server.
+* Secure CRUD Operations: Ensuring robust data transactions with MongoDB.
 
-Admin Features:
-Appointment Management, Admin can manage both user (patient) and doctor accounts. Admin has an overview of all appointments and can manage them as needed. The system provides secure login functionality for all users and doctors and ensures that both patients and doctors have the tools they need to manage appointments effectively. Admins have a comprehensive control panel to manage users, doctors, and appointments, ensuring a smooth operation of the entire platform.
+## Setup
+### Prerequisites
+Ensure that you have VS code, Node.js and MongoDB installed on your system. 
 
-By combining these features into one integrated platform, this app creates a more efficient, organized, and user-friendly environment for managing healthcare appointments.
+Steps to run
+1. Clone the repository: 
+```bash
+git clone https://github.com/Ekram-ul-haque/DocDirect-1.git
+cd DocDirect-1
+code .
+```
 
+2. Install dependencies:
+```bash
+npm install
+cd client
+npm install
+cd ..
+```
+3. Configure environment variables: 
+* Create a .env file in the root directory.
+* Add the following variables and add your JWT_SECRET and MONGO_URL here:
 
-## Setup 
-Pls install nodejs and vscode in local
+```bash
+PORT=8080
+JWT_SECRET=your_secret_key
+MONGO_URL=your_mongodb_connection_string
+```
+4. Run the application:
+```bash
+npm run dev
+```
 
-install npm by running code "npm install" in terminal
-
-run "npm run dev" to run the app in local browser
-
-in some seconds, app will start in your browser
+In some seconds, app will start in your browser.
 
 ## Result:
 Login and Register page:
-![alt text](Images/image.png)
+![alt text](Images/LoginRegister.png)
 
 User Homepage:
-![alt text](Images/Screenshot%20(156).png)
+![alt text](Images/UserHomePage.png)
 
-Doctor Registration page:
-![alt text](Images/Screenshot%20(160).png)
+Booking Page: 
+![alt text](Images/BookingPage.png)
 
-Appointments List:
-![alt text](Images/Screenshot%20(161).png)
+Doctor Appointment Dashboard page:
+![alt text](Images/Doc_appointment_dashboard.png)
 
-Admin Panel:
-![alt text](Images/Screenshot%20(157).png)
+Admin Panel approving doctors:
+![alt text](Images/Admin_doc_approve.png)
 
+Doctor Register Form:
+![alt text](Images/ApplyDoctor.png)
